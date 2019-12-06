@@ -1,0 +1,46 @@
+#Hey this is the code so far. 
+
+def loadData():
+    dataList = []
+
+    while True:
+        wg = float(input('Please insert your weight in "kg" : '))
+        if wg < 20 or wg > 200: 
+            print("The weight must be between 20 and 200.")
+
+        else:
+            dataList.append(wg)
+            ds = float(input('Please insert your dose in "mg" : '))
+        if ds < 50 or ds > 500:
+            print("The dose must be between 50 and 500.")
+
+        else:
+            dataList.append(ds)
+            time = float(input("Please enter the times in minutes: "))
+            dataList.append(time)
+
+            con = float(input('Please insert your concentration in "mg/L": '))
+            if con < 0 or con > 50:
+                print("The concentration should be between 0 and 50.")
+            dataList.append(con)
+        print("Our data file is: ", dataList)
+loadData()        
+
+#### But I find the rest of it difficult and dont know how to make:
+##### I dont know how to make the rest of the def dataFittin():
+
+
+import math 
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
+
+
+
+def dataFitting(weight, dose, time, concentration):
+
+    dataList.append(wg)
+    dataList.append(ds)
+    np.asarray(dataList.append(time)) 
+    np.asarray(dataList.append(con)) 
+    
